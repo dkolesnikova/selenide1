@@ -14,15 +14,6 @@ public class SelenideTest  {
         $(".js-wiki-more-pages-link").click();
         $("#wiki-pages-box").shouldHave(text("SoftAssertions"));
         $(".wiki-pages-box").find(byText("SoftAssertions")).click();
-        $(".gh-header-meta").shouldHave(text("Andrei Solntsev edited this page"));
-
-
-
-
-
-
-
-
-
+        $(".markdown-body").shouldHave(text("Using JUnit5 extend test class"));
     }
 }
